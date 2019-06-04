@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+ <S:Header>
+ <To
+xmlns="http://www.w3.org/2005/08/addressing">http://localhost:8080
+/CONNECTAdapter/AdapterComponentXDRResponse_Service</To>
+ <Action
+xmlns="http://www.w3.org/2005/08/addressing">urn:gov:hhs:fha:nhinc
+:adaptercomponentxdrresponse:XDRResponseInputMessage</Action>
+ <ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
+
+<Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+ </ReplyTo>
+ <MessageID
+xmlns="http://www.w3.org/2005/08/addressing">5a3d7012-029e-4559-
+9a55-49e3d80d0190</MessageID>
+ </S:Header>
+ <S:Body>
+ <ns21:AdapterRegistryResponse
+xmlns:ns2="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+ xmlns:ns3="http://www.w3.org/2005/08/addressing"
+ xmlns:ns4="http://docs.oasis-open.org/wsn/b-2"
+ xmlns:ns5="http://docs.oasis-open.org/wsrf/bf-2"
+ xmlns:ns6="http://docs.oasis-open.org/wsn/t-1"
+ xmlns:ns7="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+ xmlns:ns8="urn:oasis:names:tc:ebxmlregrep:xsd:rim:3.0"
+ xmlns:ns9="urn:oasis:names:tc:ebxmlregrep:xsd:query:3.0"
+ xmlns:ns10="urn:oasis:names:tc:ebxmlregrep:xsd:lcm:3.0"
+ xmlns:ns11="http://www.hhs.gov/healthit/nhin"
+ xmlns:ns12="urn:ihe:iti:xds-b:2007"
+
+xmlns:ns13="http://nhinc.services.com/schema/auditmessage"
+ xmlns:ns14="http://www.hhs.gov/healthit/nhin/cdc"
+
+xmlns:ns15="urn:gov:hhs:fha:nhinc:common:subscriptionb2overridefor
+cdc"
+
+xmlns:ns16="urn:oasis:names:tc:xacml:2.0:policy:schema:os"
+
+xmlns:ns17="urn:oasis:names:tc:xacml:2.0:context:schema:os"
+ xmlns:ns18="urn:oasis:names:tc:emergency:EDXL:DE:1.0"
+
+xmlns:ns19="urn:gov:hhs:fha:nhinc:common:subscriptionb2overridefor
+documents"
+ xmlns:ns20="urn:gov:hhs:fha:nhinc:common:nhinccommon"
+
+xmlns:ns21="urn:gov:hhs:fha:nhinc:common:nhinccommonadapter">
+ <ns21:assertion>
+
+<ns20:haveSecondWitnessSignature>false</ns20:haveSecondWitnessSignature>
+ <ns20:haveSignature>false</ns20:haveSignature>
+
+<ns20:haveWitnessSignature>false</ns20:haveWitnessSignature>
+ <ns20:homeCommunity>
+
+<ns20:homeCommunityId>123.456.657.123</ns20:homeCommunityId>
+ </ns20:homeCommunity>
+ <ns20:userInfo>
+ <ns20:personName>
+ <ns20:familyName>na</ns20:familyName>
+<ns20:givenName>CMS</ns20:givenName>
+<ns20:secondNameOrInitials>Given Name - na C
+CMS Family Name -</ns20:secondNameOrInitials>
+ <ns20:fullName>CMS Given Name - na C CMS
+Family Name - na</ns20:fullName>
+ </ns20:personName>
+<ns20:userName>abcd</ns20:userName>
+ <ns20:org>
+
+<ns20:homeCommunityId>123.456.657.123</ns20:homeCommunityId>
+ <ns20:name>QSSI the esMD Local Dev
+Gateway</ns20:name></ns20:org>
+<ns20:roleCoded><ns20:code>2.16.840.1.113883.6.96</ns20:code>
+
+<ns20:codeSystem>2.16.840.1.113883.6.96</ns20:codeSystem>
+
+<ns20:codeSystemName>SNOMED_CT</ns20:codeSystemName>
+ <ns20:displayName>Claim
+Processing</ns20:displayName>
+ </ns20:roleCoded>
+ </ns20:userInfo>
+ <ns20:authorized>false</ns20:authorized>
+ <ns20:purposeOfDisclosureCoded>
+
+<ns20:code>2.16.840.1.113883.3.18.7.1</ns20:code>
+
+<ns20:codeSystem>2.16.840.1.113883.3.18.7.1</ns20:codeSystem>
+ <ns20:codeSystemName>nhinpurpose</ns20:codeSystemName>
+ <ns20:displayName>Use or disclosure of
+Psychotherapy Notes</ns20:displayName>
+ </ns20:purposeOfDisclosureCoded>
+ <ns20:samlAuthnStatement>
+ <ns20:authInstant>2009-04-
+16T13:15:39.000Z</ns20:authInstant>
+ <ns20:sessionIndex>987</ns20:sessionIndex>
+<ns20:authContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:X
+509</ns20:authContextClassRef>
+
+<ns20:subjectLocalityAddress>158.147.185.168</ns20:subjectLocalityAddress>
+ <ns20:subjectLocalityDNSName>
+esmdval.cms.hhs.gov</ns20:subjectLocalityDNSName>
+ </ns20:samlAuthnStatement>
+ <ns20:samlAuthzDecisionStatement>
+ <ns20:decision>Permit</ns20:decision>
+<ns20:resource>https://localhost:8191/CONNECTAdapter/AdapterServic
+e/AdapterDocSubmissionDeferredResponseSecured</ns20:resource>
+ <ns20:action>Execute</ns20:action>
+<ns20:evidence>
+ <ns20:assertion>
+ <ns20:id>40df7c0a-ff3e-4b26-baebf2910f6d0mc202</ns20:id>
+ <ns20:issueInstant>2009-04-
+16T13:10:39.093Z</ns20:issueInstant>
+ <ns20:version>2.0</ns20:version>
+ <ns20:issuer>CN=SAMLUser,OU=Harris,O=HITS,L=Melbourne,ST=FL,C=US</ns20:issuer>
+ <ns20:issuerFormat>urn:oasis:names:tc:SAML:1.1:nameidformat:X509SubjectName</ns20:issuerFormat>
+
+<ns20:conditions><ns20:notBefore>2009-04-
+16T13:10:39.093Z</ns20:notBefore>
+ <ns20:notOnOrAfter>2009-12-
+31T12:00:00.000Z</ns20:notOnOrAfter>
+ </ns20:conditions>
+
+<ns20:accessConsentPolicy>urn:oid:2.16.840.1.113883.13.34.110.3</ns20:accessConsentPolicy>
+
+<ns20:instanceAccessConsentPolicy>urn:oid:2.16.840.1.113883.13.34.
+110.3</ns20:instanceAccessConsentPolicy>
+ </ns20:assertion>
+ </ns20:evidence>
+ </ns20:samlAuthzDecisionStatement>
+ <ns20:samlSignature>
+ <ns20:keyInfo>
+
+<ns20:rsaKeyValueModulus></ns20:rsaKeyValueModulus>
+
+<ns20:rsaKeyValueExponent></ns20:rsaKeyValueExponent>
+ </ns20:keyInfo>
+<ns20:signatureValue></ns20:signatureValue>
+ </ns20:samlSignature>
+ <ns20:messageId>5a3d7012-029e-4559-9a55-
+49e3d80d0190</ns20:messageId>
+ </ns21:assertion>
+ <ns21:RegistryResponse requestId="esMD - Delivery ToEnterpriseFileTransfer" status="urn:oasis:names:tc:ebxmlregrep:ResponseStatusType:Success">
+ <ns7:ResponseSlotList>
+ <ns8:Slot name="TransactionId">
+ <ns8:ValueList>
+ <ns8:Value>532</ns8:Value>
+ </ns8:ValueList></ns8:Slot>
+ <ns8:Slot name="ClaimId">
+ <ns8:ValueList>
+ <ns8:Value>69777777</ns8:Value>
+ </ns8:ValueList></ns8:Slot>
+ <ns8:Slot name="CaseId">
+ <ns8:ValueList>
+ <ns8:Value>6000045</ns8:Value>
+ </ns8:ValueList>
+ </ns8:Slot>
+ <ns8:Slot name="contentTypeCode">
+ <ns8:ValueList>
+ <ns8:Value>1</ns8:Value>
+ </ns8:ValueList>
+ </ns8:Slot>
+</ns7:ResponseSlotList>
+<ns4:RegistryErrorList highestSeverity="urn:oasis:names:tc:ebxmlregrep:ErrorSeverityType:Error">
+ <ns4:RegistryError codeContext="Review Contractor Client processing error (Unzip failure).
+Please resubmit" errorCode="XDSRegistryMetadataError"
+ severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+ </ns4:RegistryErrorList>
+ </ns21:RegistryResponse>
+ </ns21:AdapterRegistryResponse>
+ </S:Body>
+</S:Envelope>

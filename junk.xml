@@ -1,0 +1,149 @@
+<soap:Envelope
+	xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+	<soap:Body>
+		<ns2:AdapterRegistryResponse
+			xmlns:ns2="urn:gov:hhs:fha:nhinc:common:nhinccommonadapter"
+			xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+			xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+			xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+			xmlns:ns6="http://www.hhs.gov/healthit/nhin"
+			xmlns:ns7="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+			xmlns:ns8="urn:ihe:iti:xds-b:2007"
+			xmlns:ns9="http://nhinc.services.com/schema/auditmessage"
+			xmlns:ns10="http://www.w3.org/2005/08/addressing"
+			xmlns:ns11="http://docs.oasis-open.org/wsn/b-2"
+			xmlns:ns12="http://docs.oasis-open.org/wsn/t-1"
+			xmlns:ns13="http://docs.oasis-open.org/wsrf/bf-2"
+			xmlns:ns14="urn:gov:hhs:fha:nhinc:common:subscriptionb2overridefordocuments"
+			xmlns:ns15="http://www.hhs.gov/healthit/nhin/cdc"
+			xmlns:ns16="urn:gov:hhs:fha:nhinc:common:subscriptionb2overrideforcdc"
+			xmlns:ns17="urn:oasis:names:tc:xacml:2.0:context:schema:os"
+			xmlns:ns18="urn:oasis:names:tc:xacml:2.0:policy:schema:os"
+			xmlns:ns19="urn:oasis:names:tc:emergency:EDXL:DE:1.0"
+			xmlns:ns20="urn:gov:hhs:fha:nhinc:common:nhinccommon"
+			xmlns:ns21="http://www.caqh.org/SOAP/WSDL/CORERule2.2.0.xsd">
+			<ns2:assertion>
+				<ns20:homeCommunity>
+					<ns20:homeCommunityId>2.16.840.1.113883.13.34.110.2
+					</ns20:homeCommunityId>
+				</ns20:homeCommunity>
+				<ns20:userInfo>
+					<ns20:personName>
+						<ns20:familyName>na</ns20:familyName>
+						<ns20:givenName>CMS</ns20:givenName>
+						<ns20:secondNameOrInitials>Faimily Name - na C CMS Faimily Name -
+						</ns20:secondNameOrInitials>
+						<ns20:fullName>CMS Faimily Name - na C CMS Faimily Name - na
+						</ns20:fullName>
+					</ns20:personName>
+					<ns20:userName>CN=esmdval.cms.hhs.gov, OU=esMDValidation, O=Centers
+						for Medicare &amp; Medicaid Services, L=Baltimore, ST=Maryland,
+						C=US</ns20:userName>
+					<ns20:org>
+						<ns20:homeCommunityId>2.16.840.1.113883.13.34.110.4
+						</ns20:homeCommunityId>
+						<ns20:name>CMS esMD WAS Dev Gateway</ns20:name>
+					</ns20:org>
+					<ns20:roleCoded>
+						<ns20:code>2.16.840.1.113883.6.96</ns20:code>
+						<ns20:codeSystem>2.16.840.1.113883.6.96</ns20:codeSystem>
+						<ns20:codeSystemName>SNOMED_CT</ns20:codeSystemName>
+						<ns20:displayName>Claim Processing</ns20:displayName>
+					</ns20:roleCoded>
+				</ns20:userInfo>
+				<ns20:authorized>false</ns20:authorized>
+				<ns20:purposeOfDisclosureCoded>
+					<ns20:code>2.16.840.1.113883.3.18.7.1</ns20:code>
+					<ns20:codeSystem>2.16.840.1.113883.3.18.7.1</ns20:codeSystem>
+					<ns20:codeSystemName>nhin-purpose</ns20:codeSystemName>
+					<ns20:displayName>Use or disclosure of Psychotherapy Notes
+					</ns20:displayName>
+				</ns20:purposeOfDisclosureCoded>
+				<ns20:samlAuthnStatement>
+					<ns20:authInstant>2009-04-16T13:15:39.000Z</ns20:authInstant>
+					<ns20:sessionIndex>987</ns20:sessionIndex>
+					<ns20:authContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:X509
+					</ns20:authContextClassRef>
+					<ns20:subjectLocalityAddress>158.147.185.168
+					</ns20:subjectLocalityAddress>
+					<ns20:subjectLocalityDNSName>158.147.185.168
+					</ns20:subjectLocalityDNSName>
+				</ns20:samlAuthnStatement>
+				<ns20:samlAuthzDecisionStatement>
+					<ns20:decision>Permit</ns20:decision>
+					<ns20:resource>https://52.14.7.112:8191/Gateway/DocumentSubmission/2_0/NhinService/XDRResponse_Service
+					</ns20:resource>
+					<ns20:action>Execute</ns20:action>
+					<ns20:evidence>
+						<ns20:assertion>
+							<ns20:id>_7194f7d0-ae4d-4e37-9744-6d84143e3c97</ns20:id>
+							<ns20:issueInstant>2009-04-16T13:10:39.093Z</ns20:issueInstant>
+							<ns20:version>2.0</ns20:version>
+							<ns20:issuer>CN=SAML User,OU=Harris,O=HITS,L=Melbourne,ST=FL,C=US
+							</ns20:issuer>
+							<ns20:issuerFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName
+							</ns20:issuerFormat>
+							<ns20:conditions>
+								<ns20:notBefore>2009-04-16T13:10:39.093Z</ns20:notBefore>
+								<ns20:notOnOrAfter>2019-05-15T15:28:54.947Z</ns20:notOnOrAfter>
+							</ns20:conditions>
+							<ns20:accessConsentPolicy>urn:oid:2.16.840.1.113883.13.34.110.3
+							</ns20:accessConsentPolicy>
+							<ns20:instanceAccessConsentPolicy>urn:oid:2.16.840.1.113883.13.34.110.3
+							</ns20:instanceAccessConsentPolicy>
+						</ns20:assertion>
+					</ns20:evidence>
+				</ns20:samlAuthzDecisionStatement>
+				<ns20:samlSignature>
+					<ns20:keyInfo>
+						<ns20:rsaKeyValueModulus></ns20:rsaKeyValueModulus>
+						<ns20:rsaKeyValueExponent></ns20:rsaKeyValueExponent>
+					</ns20:keyInfo>
+					<ns20:signatureValue></ns20:signatureValue>
+				</ns20:samlSignature>
+				<ns20:samlIssuer>
+					<ns20:issuer>CN=SAML User,OU=SU,O=SAML User,L=Los
+						Angeles,ST=CA,C=US</ns20:issuer>
+					<ns20:issuerFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName
+					</ns20:issuerFormat>
+				</ns20:samlIssuer>
+				<ns20:samlSubjectConfirmations>
+					<ns20:method>urn:oasis:names:tc:SAML:2.0:cm:holder-of-key
+					</ns20:method>
+					<ns20:subjectCondition />
+				</ns20:samlSubjectConfirmations>
+				<ns20:messageId>urn:uuid:9c80c8d5-75ca-4be0-b190-76eebced00d1
+				</ns20:messageId>
+				<ns20:relatesToList
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:nil="true" />
+			</ns2:assertion>
+			<ns2:RegistryResponse
+				status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success"
+				requestId="esMD - Delivery To Enterprise File Transfer">
+				<ns4:ResponseSlotList>
+					<ns3:Slot name="esMDTransactionId">
+						<ns3:ValueList>
+							<ns3:Value>JRP0000001233152</ns3:Value>
+						</ns3:ValueList>
+					</ns3:Slot>
+					<ns3:Slot name="esMDClaimId">
+						<ns3:ValueList>
+							<ns3:Value>1234567890123</ns3:Value>
+						</ns3:ValueList>
+					</ns3:Slot>
+					<ns3:Slot name="esMDCaseId">
+						<ns3:ValueList>
+							<ns3:Value>ADF-2534</ns3:Value>
+						</ns3:ValueList>
+					</ns3:Slot>
+					<ns3:Slot name="contentTypeCode">
+						<ns3:ValueList>
+							<ns3:Value>1</ns3:Value>
+						</ns3:ValueList>
+					</ns3:Slot>
+				</ns4:ResponseSlotList>
+			</ns2:RegistryResponse>
+		</ns2:AdapterRegistryResponse>
+	</soap:Body>
+</soap:Envelope>
